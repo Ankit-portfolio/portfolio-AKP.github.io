@@ -219,5 +219,35 @@ If you are interested in collaborating on a project or have any questions, pleas
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      const scriptURL =                       
+      https://script.google.com/macros/s/AKfycbw-GMjNHiZn9lHmNFAWr1ueD0swFcY_fvMiMWf-ASm2jnZ3c2XCYmsfe4GZ7Ik9wFnP/exec";
+     "const form = document.forms["submit-to-google-sheet"];
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        var formData = new FormData(form);
+        var ex = document.getElementById("ex").checked;
+        var age = document.getElementById("age").checked;
+
+        if (age) {
+          formData.append("age", "Yes");
+        } else {
+          formData.append("age", "No");
+        }
+        if (ex) {
+          formData.append("ex", "Yes");
+        } else {
+          formData.append("ex", "No");
+        }
+
+        fetch(scriptURL, { method: "POST", body: formData })
+          .then((response) => {
+            swal("Done", "Submitted Successfully.", "success");
+          })
+          .catch((error) => {
+            swal("Error", "Something went wrong. please try again!", "error");
+          });
+      });
+    </script>
   </body>
 </html>
