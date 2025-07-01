@@ -4,7 +4,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <title>My Portfolio-Ankit Sharma</title>
+    <title>Portfolio-Ankit Sharma</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -17,7 +17,8 @@
     </div>
         <nav>
       <div class="navbar">
-        <div class="logo"><a href="#">Portfolio..</a></div>
+        <div class="logo"><a href="#">Portfolio...</a></div>
+
         
         <ul class="menu">
           <li><a href="#home">Home</a></li>
@@ -32,7 +33,13 @@
         <div class="media-icons">
           <a href="https://www.facebook.com/profile.php?id=100083089833676"><i class="fab fa-facebook-f"></i></a>
                    <a href="https://www.instagram.com/pandit_ankit74525/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/ankit-sharma-151213366/"><i class="fab fa-linkedin" ></i></a>
+
+         
+   
+   <a href="https://www.linkedin.com/in/ankit-sharma-151213366/"><i class="fab fa-linkedin" ></i></a>
+
+
+
 
         </div>
       </div>
@@ -44,6 +51,8 @@
     <section class="home" id="home">
       <div class="home-content">
         <div class="text">
+
+
           <div class="text-one">Hello,</div>
           <div class="text-two">I'm Ankit Sharma</div>
           <div class="text-three">UI/UX/Static Web Designer</div>
@@ -60,12 +69,12 @@
         <div class="title"><span>About Me</span></div>
         <div class="about-details">
           <div class="left">
-            <img src="ankitimg.jpg">
+            <img src="picture.jpg">
           </div>
           <div class="right">
             <div class="topic">Designing Is My Passion</div>
             <p>
-             My name is Ankit Sharma, and I am a passionate and dedicated Static Web Developer with a strong background in Computer Science.
+             My name is  Pandit Ankit Sharma, and I am a passionate and dedicated Static Web Developer with a strong background in Computer Science.
 I have a keen interest in web development and have been working on various projects to enhance my skills.
 I am proficient in HTML, CSS, and JavaScript, and I am also familiar with frameworks like React and Php.
 I am always eager to learn new technologies and improve my skills in web development.
@@ -216,38 +225,9 @@ If you are interested in collaborating on a project or have any questions, pleas
     <footer>
       <div class="text">
         <span>Created By <a href="#home">Pandit Ankit Sharma</a> | &#169; 2025 All Rights Reserved</span>
+
       </div>
     </footer>
     <script src="script.js"></script>
-    <script>
-      const scriptURL =                       
-      https://script.google.com/macros/s/AKfycbw-GMjNHiZn9lHmNFAWr1ueD0swFcY_fvMiMWf-ASm2jnZ3c2XCYmsfe4GZ7Ik9wFnP/exec";
-     "const form = document.forms["submit-to-google-sheet"];
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        var formData = new FormData(form);
-        var ex = document.getElementById("ex").checked;
-        var age = document.getElementById("age").checked;
-
-        if (age) {
-          formData.append("age", "Yes");
-        } else {
-          formData.append("age", "No");
-        }
-        if (ex) {
-          formData.append("ex", "Yes");
-        } else {
-          formData.append("ex", "No");
-        }
-
-        fetch(scriptURL, { method: "POST", body: formData })
-          .then((response) => {
-            swal("Done", "Submitted Successfully.", "success");
-          })
-          .catch((error) => {
-            swal("Error", "Something went wrong. please try again!", "error");
-          });
-      });
-    </script>
   </body>
 </html>
